@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Thee Ah-mazing AJAX Blogsite Post Machine</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="header">Thee Ah-mazing AJAX Blogsite Post Machine
+    <div id="deets">
+      <p>Yu can post words</p>
+      <p>Yu can post images</p>
+      <p>Yu can edit</p>
+      <p>Yu can delete</p>
+      <p>Yu must to do them all</p>
+    </div>
+    <button value="new" id="new">New Post</button>
+</div>
+
+<div class="container">
+  <div class="post-selection">
+    <div id="blog-title">
+    </div>
+    <div id="blog-content">
+    </div>
+    <div>
+      <img src="" alt="" id="blog-image">
+    </div>
+  </div>
+  <div class="content">
+    <form class="post-form" action="index.html" method="post">
+      Title<br>
+      <input class="post-form" id="title" type="text" required>
+      <p>Yr Words<br>
+      <textarea class="post-form" id="content" type="text" rows="6" required ></textarea></p>
+      <p>Add Image<br>
+        <input class="post-form" placeholder="image url" required>
+       </p>
+      <button type="submit" id="save">Save</button>
+    </form>
+  </div>
+</div>
+</body>
+
+</html>

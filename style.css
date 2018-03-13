@@ -1,0 +1,52 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+}
+
+.header {
+  height: 300px;
+  color: lavenderblush;
+  padding: 1em;
+  background-color: darkorchid;
+  font-size: 2em;
+  opacity: .9;
+}
+
+#deets {
+  padding: 0px;
+  font-size: .5em;
+}
+
+button {
+  border: 1px solid;
+  border-radius: 35px;
+  color: lavenderblush;
+  border-color: lavenderblush;
+  padding: .4em 1em .4em 1em;
+  margin-top: .5em;
+  background-color: rgba(255,45,234, .5);
+  font-size: .7em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px 300px;
+    color: lavenderblush;
+    background-color: rgba(255,0,144,.2);
+    padding: 2em;
+
+}
+
+.post-form {
+  display: none;
+  width: 96%;
+  font-size: 1.2em;
+  margin-top: .2em;
+  border-radius: 5px;
+  padding: .3rem .7rem
+}
+
+#save {
+font-size: 1.2em;
+}
