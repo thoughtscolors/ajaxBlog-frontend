@@ -21,6 +21,7 @@
       <p>Yu must to do them all</p>
     </div>
     <button value="new" id="new">New Post</button>
+    <div id="save-status"></div>
 </div>
 
 <div class="container">
@@ -29,23 +30,24 @@
   <div id="new-post">
     <form class="post-form" action="index.html" method="post">
       Title<br>
-      <input class="post-form" id="title" type="text" required>
+      <input class="post-form" id="title" type="text" maxlength="33" required>
       <p>Yr Words<br>
       <textarea class="post-form" id="content" type="text" rows="6" required ></textarea></p>
       <p>Add Image<br>
         <input class="post-form" placeholder="image url" id="image" required>
        </p>
       <button id="save">Save</button>
-      <div id="save-status"></div>
+      <!-- <div id="save-status"></div> -->
     </form>
-    <div id="show-post">
+    <div class="show-post">
       <div id="blog-title">
       </div>
       <div id="blog-content">
       </div>
       <div>
-        <img src="" alt="" id="blog-image">
+        <img src="" alt="Only Cat Pictures" id="blog-image">
       </div>
+      <div id="post-options"></div>
     </div>
   </div>
 </div>

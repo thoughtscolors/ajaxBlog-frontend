@@ -1,14 +1,17 @@
+
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: black;
+  margin: 0;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
 
 .header {
-  height: 210px;
+  height: 180px;
   color: lavenderblush;
   padding: 1em;
   background-color: darkorchid;
@@ -35,7 +38,8 @@ button {
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 300px 300px;
+    grid-template-rows: repeat(2, 100%);
+    min-height: 500px;
     color: lavenderblush;
     background-color: rgba(255,0,144,.2);
     padding: 2em;
@@ -50,9 +54,9 @@ button {
   padding: .3rem .7rem
 }
 
-#show-post {
+.show-post {
   display: none;
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin-left: 2rem
   /* position: absolute;
@@ -65,8 +69,21 @@ font-size: 1.2em;
 }
 
 #blog-title {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-style:italic;
+  border-bottom: 1px white;
+  max-width: 100%;
+  margin-top: .5rem;
+}
+
+#blog-content {
+  margin-top: .5rem;
+  max-width: 100%;
+}
+
+#blog-image {
+  margin-top: .5rem;
+  max-width: 100%;
 }
 
 #new-post {
@@ -75,11 +92,20 @@ font-size: 1.2em;
 
 #post-selection {
   font-size: 1.3em;
+  display: table;
+  max-width: 90%;
 }
 
 #save-status {
+    margin-top: .2em;
     display: block;
+    /* bottom: 0; */
+    /* width: 100px; */
+    /* height: 20px; */
+    font-size: .5em;
+    /* bottom: 0; */
     text-align: center;
+    background-color: rgba(124, 252, 0, .5);
     /* opacity: 1;
     transition: opacity .5s; */
 }
