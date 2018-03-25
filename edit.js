@@ -37,7 +37,7 @@ const saveChanges = () => {
       displayMessage.style.backgroundColor = "rgba(252, 0, 0, .5)"
       $('#save-status').fadeIn(500).delay(2000).fadeOut(500)
     } else {
-    axios.put(`http://localhost:3000/posts/${postID}`, { title, content, image })
+    axios.put(`https://frozen-fjord-94877.herokuapp.com/posts/${postID}`, { title, content, image })
     .then(response => {
      let postID = response.data.data.id
      let title = response.data.data.title

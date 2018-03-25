@@ -29,7 +29,7 @@ const renderNewPostOnSuccess = (postID, title, content, image) => {
 const showSelectedBlogPost = () => {
   let postID = event.target.id
   let displayMessage = document.getElementById("save-status")
-  axios.get(`http://localhost:3000/posts/${postID}`)
+  axios.get(`https://frozen-fjord-94877.herokuapp.com/posts/${postID}`)
   .then(response => {
    let title = response.data.data.title
    let content = response.data.data.content

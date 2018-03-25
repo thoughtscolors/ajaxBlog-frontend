@@ -1,5 +1,3 @@
-const render = './render'
-
 document.addEventListener('DOMContentLoaded', ev => {
   init()
 });
@@ -14,7 +12,7 @@ function init(ev) {
 }
 
 const getBlogPosts = () => {
-  return axios.get('http://localhost:3000/posts')
+  return axios.get(`https://frozen-fjord-94877.herokuapp.com/posts/`)
   .then(response => {
     let blogPosts = response.data.data
     console.log(blogPosts, "in getBlogPosts");
@@ -65,7 +63,7 @@ const createPost = () => {
     let content = document.getElementById('content').value
     let image = document.getElementById('image').value
     let displayMessage = document.getElementById("save-status")
-    axios.post('http://localhost:3000/posts', { title, content, image })
+    axios.post(`https://frozen-fjord-94877.herokuapp.com/posts/`, { title, content, image })
     .then(response => {
      let postID = response.data.data.id
      let title = response.data.data.title
@@ -91,7 +89,7 @@ const deletePost = () => {
   let postID = contentWindow.id
   let displayMessage = document.getElementById("save-status")
   console.log(postID, "postID in delete post");
-  axios.delete(`http://localhost:3000/posts/${postID}`)
+  axios.delete(`https://frozen-fjord-94877.herokuapp.com/posts/${postID}`)
   .then (res => {
     console.log(res)
     displayMessage.innerHTML = "Success!"
